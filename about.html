@@ -1,0 +1,503 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Игровые онлайн серверы проекта GTA5RP</title>
+<meta name="csrf-token" content="a65e7f164b9f5eb2c862e84b7362">
+<meta name="theme-color" content="#fff">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta name="description" content="Кем ты хочешь быть в GTA 5 RP в любом из 5 городов серверов? Бизнесменом, чиновником, агентом спецслужб или главарем мафии? Зарабатывай много денег, покупай крутые тачки, оттягивайся в клубах с реальными людьми онлайн на наших серверах!">
+            <meta name="keywords" content="сервер server гта gta 5 онлайн online">
+            <meta name="dme" content="e7af0b2d0384ac5879d50ec28bc2">
+            <meta name="mn-token" content="">
+            <meta name="robots" content="noyaca">
+    <!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KBHGWBM');
+</script>
+<!-- End Google Tag Manager -->
+<link rel="canonical" href="about.html"/>
+<link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png"/>
+<link rel="stylesheet" href="css/app.css@1667462227.css">
+<link rel="stylesheet" href="css/main.css@1667462227.css">
+<script src="js/app.js@1667462227" defer></script>
+<script src="js/common.js@1667462227"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> <!-- TODO: move to webpack-->
+<script src="https://www.google.com/recaptcha/api.js?render=6LfoerMUAAAAABPDYSl6xzyWRsPbevRLBbRYTWxa"></script>
+<!-- Pages static -->
+<script src="js/pages/about.js@201612333"></script><link href="css/about.css@31340125.css" rel="stylesheet">
+
+<script type="text/javascript">
+    var user = {
+    "url": "https:\/\/gta5rp.com",
+    "version": 1667462227,
+    "mid": null,
+    "csrfToken": "a65e7f164b9f5eb2c862e84b7362",
+    "searchSpider": true
+};
+    window.needNewNavBar = true;
+    window.redesignRoutes = [
+    "\/",
+    "\/login",
+    "\/restore",
+    "\/settings",
+    "\/stats",
+    "\/start",
+    "\/about",
+    "\/news",
+    "\/donate",
+    "\/register",
+    "\/shop",
+    "\/top",
+    "\/boombox"
+];
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBHGWBM"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<div id="box_layer_wrap" class="scroll_fix_wrap fixed" style="display: none;">
+    <div id="box_layer" style="width: 740px;">
+        <div id="box_loader" style="display: block; margin-top: 300px;">
+            <div class="pr pr_baw pr_medium" id="box_loader_pr">
+                <div class="pr_bt"></div>
+                <div class="pr_bt"></div>
+                <div class="pr_bt"></div>
+            </div>
+            <div class="back"></div>
+        </div>
+    </div>
+</div>
+<div id="system_msg" style="background-color: rgb(255, 180, 163); display: none;"></div>
+<div id="system_msg2" style="background-color: #D6E5F7;  display: none;"></div>
+<div class="modal" id="confirm_modal" tabindex="-1" role="dialog" aria-labelledby="confirm_modalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm_box_title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"><span id="confirm_modal_text"></span></div>
+            <div class="modal-footer">
+                <button class="g-btn g-btn-modal-success mr-2" type="button" onclick="ajax.confirmAction()" id="activation_a34b294cac20">Да</button>
+                <button class="g-btn g-btn-modal-danger ml-2" type="button" data-dismiss="modal" onclick="">Нет</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    domReady(function () {
+        stFiles.init({
+    "about.js": 201612333,
+    "about.css": 31340125
+});
+        ajax.refreshNav();
+new WOW.WOW().init();
+AboutPage.init();
+addDynamicStrings({"global_confirm_box_title":"Подтверждение действия","global_yes":"Да","global_no":"Нет","global_captcha_box":"Проверка на робота. Подождите..."});
+ajax.setPageParams({"title":"Игровые онлайн серверы проекта GTA5RP","loc":"\/about","module":"about","noLoc":false});
+
+    });
+</script>
+<div class="wrapper" id="app">
+    <span id="nav_block">
+        <div class="navMain__wrapper" id="nav-app">
+    <nav class="navMain">
+                    <a href="index.html" role="button" class="navMain__logo nav-go" id="logo__adaptive">
+                <img src="images/logo.png"
+                     alt="gta5rp logo"
+                />
+            </a>
+                <div class="navMain__elements">
+                            <a href="index.html" role="button" class="navMain__logo nav-go" id="logo__main">
+                    <img src="images/logo.png"
+                         alt="gta5rp logo"
+                    />
+                </a>
+                        <ul class="navMain__links mb-0">
+                <!--
+                                    <li>
+                        <a href="/" class="nav-go">
+                            Главная
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="start.html" class="nav-go">
+                            Играть                        </a>
+                    </li>
+                    <li>
+                        <a href="javascript:void()" class="nav-go">
+                            Сервер                        </a>
+                    </li>
+                                        <li>
+                        <a href="index.html@act=away_forum.html"
+                           onclick="statEvents.send('Переход на форум', 'click', 'cur_loc');">
+                            Форум                        </a>
+                    </li>
+
+                    <li>
+                                                    <a href="shop.html" class="nav-go">
+                                Купить GTA 5                            </a>
+                                            </li>
+
+                                </ul>
+            <ul class="navMain__links--sec" id="right_nav_bar">
+                <!-- if player login -->
+
+    <li>
+        <a class="navMain__auth nav-go" href="https://gta5rp.com/login">
+            <img src="images/icons/login.png"
+                 alt="login icon png"
+            />
+            <p>
+                Авторизация            </p>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div class="navMain__adaptive" id="switchNav">
+            <button class="hamburger hamburger--collapse" type="button"> <!-- is-active -->
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+        </div>
+    </nav>
+</div>
+
+<div class="navAdaptive__wrapper" id="navAdaptive__starsField">
+    <nav class="navAdaptive">
+        <ul>
+            <li class="navAdaptive__headline pb-0">
+                <h2>
+                    Меню                </h2>
+            </li>
+            <!--
+                            <li class = "navAdaptive__item">
+                    <a href = "/" class = "navAdaptive__item--title nav-go" role = "button">
+                        Главная
+                    </a>
+                </li>
+                -->
+                                    <li class="navAdaptive__item">
+                        <a href="start.html" class="navAdaptive__item--title nav-go" role="button">
+                            Играть                        </a>
+                    </li>
+                                                                <li class="navAdaptive__item"> <!-- TODO: bug fix https://forum.gta5rp.com/ and remove nav-go -->
+                    <a href="index.html@act=away_forum.html"
+                       class="navAdaptive__item--title nav-go"
+                       role="button">
+                        Форум                    </a>
+                </li>
+                                <li class="navAdaptive__item">
+                                                                        <a href="shop.html" class="navAdaptive__item--title nav-go" role="button">
+                                Купить GTA 5                            </a>
+                                                            </li>
+                                                    <li class="navAdaptive__item">
+                        <a href="https://gta5rp.com/login" class="navAdaptive__item--title nav-go" role="button">
+                            Авторизация                        </a>
+                    </li>
+                        </ul>
+        <button type="button" class="navAdaptive__close" id="closeAdaptive"></button>
+    </nav>
+</div>
+    </span>
+    <main id="page_content_body">
+            <div class="with-video pageHeader__wrapper">
+    <div class="pageHeader__video--wrapper">
+        <div class="pageHeader__video">
+            <div class="pageHeader__video--bg"
+                 style="background: url('images/screens/headerVideo/server.png') no-repeat top center;">
+                <div class="g-btn-video__wrapper">
+                    <a href="https://www.youtube.com/watch?v=qySoJyrJH4A" rel="nofollow" target="_blank">
+                        <div class="g-btn-video">
+                            <div class="g-btn-video__press"></div>
+                            <div class="g-btn-video__impulse"></div>
+                            <div class="g-btn-video__impulse__lone"></div>
+                            <div class="g-btn-video__impulse__ltwo"></div>
+                            <div class="g-btn-video__impulse__lthree"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <div class="play__wrapper">
+        <div class="container" style="max-width: 1086px !important;">
+            <div class="row">
+                <div class="col-12 mt-5 d-flex flex-column align-items-center justify-content-center">
+                    <img src="images/icons/scroll-down.png"/>
+                    <img class="wow fadeInDown" src="images/screens/about/downtown-headline.png"
+                         style="max-width: 100%;"/>
+                </div>
+                <div class="wow slideInDown col-md-3 mt-4 d-flex justify-content-center">
+                    <div class="server__pic"
+                         style="background: url('images/screens/about/1.png') no-repeat top center;">
+                    </div>
+                </div>
+                <div class="wow slideInUp col-md-9 mt-4">
+                    <section class="server__signature">
+                        <header>
+                            <h2>
+                                <img src="images/icons/icon-glory.png" class="mr-3"/>
+                                Добейся успеха и славы                            </h2>
+                        </header>
+                        <div class="server__signature--content mt-4">
+                            <p>
+                                Открой свой бизнес, устанавливай цены, закупай продукты у перевозчиков, давай
+                                рекламу об услугах, привлекай клиентов, проводи различные мероприятия и, конечно же,
+                                получая прибыль потрать огромную часть состояния на развлечения в клубах.                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="wow slideInDown col-md-3 mt-4 d-flex justify-content-center">
+                    <div class="server__pic"
+                         style="background: url('images/screens/about/2.png') no-repeat top center;">
+                    </div>
+                </div>
+                <div class="wow slideInUp col-md-9 mt-4">
+                    <section class="server__signature">
+                        <header>
+                            <h2>
+                                <img src="images/icons/icon-grab.png" class="mr-3"/>
+                                Совершай ограбления                            </h2>
+                        </header>
+                        <div class="server__signature--content mt-4">
+                            <p>
+                                А быть может проблемы с законом вас не интересует.
+                                Тогда вы можете работать в городской больнице, где будете помогать людям:
+                                проводить тяжелые операции, лечить наркозависимых людей или же выезжать
+                                по вызову на дом.                            </p>
+                        </div>
+                    </section>
+                </div>
+                <div class="wow slideInUp col-md-3 mt-4 d-flex justify-content-center">
+                    <div class="server__pic"
+                         style="background: url('images/screens/about/3.png') no-repeat top center;">
+                    </div>
+                </div>
+                <div class="wow slideInDown col-md-9 mt-4">
+                    <section class="server__signature">
+                        <header>
+                            <h2>
+                                <img src="images/icons/icon-police.png" class="mr-3"/>
+                                Работай на государство                            </h2>
+                        </header>
+                        <div class="server__signature--content mt-4">
+                            <p>
+                                Играя у нас на сервере, с каждым днем у вас будут появляться новые друзья.
+                                Зарабатывая много денег покупать себе самые дорогие машины и дома.
+                                Все это и многое другое и интересное только у нас! Присоединяйся!                            </p>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="joinUs__wrapper" id="screen__joinUs">
+    <div class="joinUs__container container">
+        <div class="row">
+            <header class="col-12 mb-2 wow fadeInDown">
+                <h2 class="container-headline mt-4">
+                    Присоединяйтесь к нам                </h2>
+            </header>
+            <div class="col-12 joinUs__content d-flex flex-row flex-wrap justify-content-center align-items-center">
+                <section class="wow fadeInLeft joinUs__card mr-0 mr-md-2 mt-5">
+                    <header class="joinUs__card--header">
+                        <div id="firstCircle" class="joinUs__card--circle" data-value="0.3"
+                             data-count="983850">
+                            <div class="joinUs__card--status">
+                                <p class="joinUs__card--title mb-0">
+                                    Группа                                </p>
+                                <p class="joinUs__card--descr mt-1">
+                                    Vk.com
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="joinUs__card--content">
+                        <h2 class="joinUs__card--headline">
+                            Официальная группа vk                        </h2>
+                    </div>
+                    <footer class="joinUs__card--footer">
+                        <a href="https://vk.com/gta5rp" rel="nofollow" target="_blank" role="button"
+                           class="g-btn g-btn-default g-btn-card-first btn-border-8"
+                           onclick="statEvents.send('Присоединяйтесь к нам', 'Официальная группа ВК', 'cur_loc');">
+                            Подписаться                            <img src="images/icons/arrow-right.png" alt="gta5rp"/>
+                        </a>
+                    </footer>
+                </section>
+                <section class="wow fadeInUp joinUs__card joinUs__card--second mr-0 mr-md-2 mt-5">
+                    <header class="joinUs__card--header">
+                        <div id="secondCircle" class="circle-blue joinUs__card--circle" data-value="0.6"
+                             data-count="57633">
+                            <div class="joinUs__card--status">
+                                <p class="joinUs__card--title mb-0">
+                                    Группа                                </p>
+                                <p class="joinUs__card--descr mt-1">
+                                    Vk.com
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="joinUs__card--content">
+                        <h2 class="joinUs__card--headline">
+                            Свободная группа vk                        </h2>
+                    </div>
+                    <footer class="joinUs__card--footer">
+                        <a href="https://vk.com/gta_rp" target="_blank" rel="nofollow" role="button"
+                           class="g-btn g-btn-default g-btn-card-second btn-border-8"
+                           onclick="statEvents.send('Присоединяйтесь к нам', 'Свободная группа ВК', 'cur_loc');">
+                            Подписаться                            <img src="images/icons/arrow-right.png" alt="gta5rp"/>
+                        </a>
+                    </footer>
+                </section>
+                <section class="wow fadeInRight joinUs__card joinUs__card--thirty mr-0 mr-md-2 mt-5">
+                    <header class="joinUs__card--header">
+                        <div id="thirtyCircle" class="circle-green joinUs__card--circle" data-value="0.9"
+                             data-count="251769">
+                            <div class="joinUs__card--status">
+                                <p class="joinUs__card--title mb-0">
+                                    Канал                                </p>
+                                <p class="joinUs__card--descr mt-1">
+                                    Discord
+                                </p>
+                            </div>
+                        </div>
+                    </header>
+                    <div class="joinUs__card--content">
+                        <h2 class="joinUs__card--headline">
+                            Сервер в Discord                        </h2>
+                    </div>
+                    <footer class="joinUs__card--footer">
+                        <a href="https://discord.gg/gta5rp" rel="nofollow" target="_blank" role="button"
+                           class="g-btn g-btn-default g-btn-card-thirty btn-border-8"
+                           onclick="statEvents.send('Присоединяйтесь к нам', 'Discord', 'submit');">
+                             Вступить                            <img src="images/icons/arrow-right.png" alt="gta5rp"/>
+                        </a>
+                    </footer>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+    </main>
+    <div class="content-wrapper footer__wrapper d-flex flex-column justify-content-end">
+    <div class="footer__container container">
+        <div class="row footer__container d-flex flex-row flex-wrap align-items-start">
+            <div class="footer__container col-lg-3 col-md-4 d-flex flex-column justify-content-between align-items-center">
+                <img src="images/logo.png" alt="gta5rp logo"/>
+                                <img src="images/screens/footer/characters.png" alt="gta5rp"/>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <nav class="footerNav navMain d-flex align-items-center justify-content-center">
+                    <ul class="navMain__links mb-0">
+                        <!--
+                                                    <li>
+                                <a href="/" class="nav-go">
+                                    Главная
+                                </a>
+                            </li>
+                        -->
+                            <li>
+                                <a href="start.html"
+                                   class="nav-go">
+                                    Играть                                </a>
+                            </li>
+                            <li>
+                                <a href="javascript:void()"
+                                   class="nav-go">
+                                    Сервер                                </a>
+                            </li>
+                                                        <li>
+                                <a href="index.html@act=away_forum.html" target="_blank"
+                                   onclick="statEvents.send('Переход на форум', 'click', 'cur_loc');">
+                                    Форум                                </a>
+                            </li>
+                                                        <li>
+                                <a href="news.html" class="nav-go">
+                                    Новости                                </a>
+                            </li>
+                                                                                                                                                                </ul>
+                </nav>
+            </div>
+            <div class="d-flex flex-column col-lg-5 col-md-4">
+                <p class="mt-4 footer__p d-flex align-items-center justify-content-center">
+                    GTA 5 RP — новый уровень онлайн-игр. Играй <br />
+                    бандитом или полицейским, чиновником или медиком,
+                    мафией или сотрудником ФБР. <br /> <br />
+                    Прочувствуй атмосферу удивительного мира ролевой
+                    игры с реалистичным миром на ГТА РП!                </p>
+                <img src="images/screens/footer/veh.png" class="d-none d-lg-flex align-self-end" alt="gta5rp"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer__agreements d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="footer_row">
+            <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-lg-start">
+                <a href="https://gta5rp.com/doc/oferta.pdf" class="footer__agreement">
+                    Пользовательское соглашение                </a>
+            </div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-lg-start">
+                <a href="https://gta5rp.com/doc/privacy.pdf" class="footer__agreement">
+                    Политика защиты персональной информации                </a>
+            </div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-lg-start">
+                <span class="footer__agreement">
+                    GTA5RP.COM &copy Life Now Limited
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="scrollTop-app">
+    <transition name="scrollFade">
+        <div class="scrollTop__wrapper"
+             v-if="is_visible"
+             @click.prevent="toTop()">
+            <div class="scrollTop__main">
+                <div class="scrollTop__arrow"></div>
+                <p>Наверх</p>
+            </div>
+        </div>
+    </transition>
+</div>
+</div>
+</body>
+</html>
+    <!-- Page rendered at 0.015043020248413 sec -->

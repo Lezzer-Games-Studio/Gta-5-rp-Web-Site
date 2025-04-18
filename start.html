@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<title>Как начать играть в GTA 5 на RP сервере</title>
+<meta name="csrf-token" content="ca9af534417814eddf5e4d534653">
+<meta name="theme-color" content="#fff">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+            <meta name="description" content="Хотите играть на наших серверах GTA5RP вместе с другими 9000 онлайн игроками? Вам нужно лишь иметь лицензионную игру GTA 5 и скачать лаунчер с нашего сайта. После установки и запуска лаунчера придумайте себе игровое имя, выберите сервер и вперед!">
+            <meta name="keywords" content="как начать играть гта gta 5 rp онлайн online ">
+            <meta name="dme" content="e7af0b2d0384ac5879d50ec28bc2">
+            <meta name="mn-token" content="">
+            <meta name="robots" content="noyaca">
+    <!-- Google Tag Manager -->
+<script>(function (w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start':
+                new Date().getTime(), event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-KBHGWBM');
+</script>
+<!-- End Google Tag Manager -->
+<link rel="canonical" href="start.html"/>
+<link rel="shortcut icon" href="images/favicons/favicon.ico" type="image/x-icon"/>
+<link rel="apple-touch-icon" href="images/favicons/apple-touch-icon.png"/>
+<link rel="apple-touch-icon" sizes="57x57" href="images/favicons/apple-touch-icon-57x57.png"/>
+<link rel="apple-touch-icon" sizes="72x72" href="images/favicons/apple-touch-icon-72x72.png"/>
+<link rel="apple-touch-icon" sizes="76x76" href="images/favicons/apple-touch-icon-76x76.png"/>
+<link rel="apple-touch-icon" sizes="114x114" href="images/favicons/apple-touch-icon-114x114.png"/>
+<link rel="apple-touch-icon" sizes="120x120" href="images/favicons/apple-touch-icon-120x120.png"/>
+<link rel="apple-touch-icon" sizes="144x144" href="images/favicons/apple-touch-icon-144x144.png"/>
+<link rel="apple-touch-icon" sizes="152x152" href="images/favicons/apple-touch-icon-152x152.png"/>
+<link rel="apple-touch-icon" sizes="180x180" href="images/favicons/apple-touch-icon-180x180.png"/>
+<link rel="stylesheet" href="css/app.css@1667462227.css">
+<link rel="stylesheet" href="css/main.css@1667462227.css">
+<script src="js/app.js@1667462227" defer></script>
+<script src="js/common.js@1667462227"></script>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script> <!-- TODO: move to webpack-->
+<script src="https://www.google.com/recaptcha/api.js?render=6LfoerMUAAAAABPDYSl6xzyWRsPbevRLBbRYTWxa"></script>
+<!-- Pages static -->
+
+
+<script type="text/javascript">
+    var user = {
+    "url": "https:\/\/gta5rp.com",
+    "version": 1667462227,
+    "mid": null,
+    "csrfToken": "ca9af534417814eddf5e4d534653",
+    "searchSpider": true
+};
+    window.needNewNavBar = true;
+    window.redesignRoutes = [
+    "\/",
+    "\/login",
+    "\/restore",
+    "\/settings",
+    "\/stats",
+    "\/start",
+    "\/about",
+    "\/news",
+    "\/donate",
+    "\/register",
+    "\/shop",
+    "\/top",
+    "\/boombox"
+];
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+    <noscript>
+        <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KBHGWBM"
+                height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+    <!-- End Google Tag Manager (noscript) -->
+<div id="box_layer_wrap" class="scroll_fix_wrap fixed" style="display: none;">
+    <div id="box_layer" style="width: 740px;">
+        <div id="box_loader" style="display: block; margin-top: 300px;">
+            <div class="pr pr_baw pr_medium" id="box_loader_pr">
+                <div class="pr_bt"></div>
+                <div class="pr_bt"></div>
+                <div class="pr_bt"></div>
+            </div>
+            <div class="back"></div>
+        </div>
+    </div>
+</div>
+<div id="system_msg" style="background-color: rgb(255, 180, 163); display: none;"></div>
+<div id="system_msg2" style="background-color: #D6E5F7;  display: none;"></div>
+<div class="modal" id="confirm_modal" tabindex="-1" role="dialog" aria-labelledby="confirm_modalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="confirm_box_title"></h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body"><span id="confirm_modal_text"></span></div>
+            <div class="modal-footer">
+                <button class="g-btn g-btn-modal-success mr-2" type="button" onclick="ajax.confirmAction()" id="activation_865f1b78063b">Да</button>
+                <button class="g-btn g-btn-modal-danger ml-2" type="button" data-dismiss="modal" onclick="">Нет</button>
+            </div>
+        </div>
+    </div>
+</div>
+<script type="text/javascript">
+    domReady(function () {
+        stFiles.init([]);
+        ajax.refreshNav();
+new WOW.WOW().init();
+new ClipboardJS('.g-btn');
+addDynamicStrings({"global_confirm_box_title":"Подтверждение действия","global_yes":"Да","global_no":"Нет","global_captcha_box":"Проверка на робота. Подождите..."});
+ajax.setPageParams({"title":"Как начать играть в GTA 5 на RP сервере","loc":"\/start","module":"start","noLoc":false});
+
+    });
+</script>
+<div class="wrapper" id="app">
+    <span id="nav_block">
+        <div class="navMain__wrapper" id="nav-app">
+    <nav class="navMain">
+                    <a href="index.html" role="button" class="navMain__logo nav-go" id="logo__adaptive">
+                <img src="images/logo.png"
+                     alt="gta5rp logo"
+                />
+            </a>
+                <div class="navMain__elements">
+                            <a href="index.html" role="button" class="navMain__logo nav-go" id="logo__main">
+                    <img src="images/logo.png"
+                         alt="gta5rp logo"
+                    />
+                </a>
+                        <ul class="navMain__links mb-0">
+                <!--
+                                    <li>
+                        <a href="/" class="nav-go">
+                            Главная
+                        </a>
+                    </li>
+                    -->
+                    <li>
+                        <a href="javascript:void()" class="nav-go">
+                            Играть                        </a>
+                    </li>
+                    <li>
+                        <a href="about.html" class="nav-go">
+                            Сервер                        </a>
+                    </li>
+                                        <li>
+                        <a href="index.html@act=away_forum.html"
+                           onclick="statEvents.send('Переход на форум', 'click', 'cur_loc');">
+                            Форум                        </a>
+                    </li>
+
+                    <li>
+                                                    <a href="shop.html" class="nav-go">
+                                Купить GTA 5                            </a>
+                                            </li>
+
+                                </ul>
+            <ul class="navMain__links--sec" id="right_nav_bar">
+                <!-- if player login -->
+
+    <li>
+        <a class="navMain__auth nav-go" href="https://gta5rp.com/login">
+            <img src="images/icons/login.png"
+                 alt="login icon png"
+            />
+            <p>
+                Авторизация            </p>
+        </a>
+    </li>
+            </ul>
+        </div>
+        <div class="navMain__adaptive" id="switchNav">
+            <button class="hamburger hamburger--collapse" type="button"> <!-- is-active -->
+                <span class="hamburger-box">
+                <span class="hamburger-inner"></span>
+              </span>
+            </button>
+        </div>
+    </nav>
+</div>
+
+<div class="navAdaptive__wrapper" id="navAdaptive__starsField">
+    <nav class="navAdaptive">
+        <ul>
+            <li class="navAdaptive__headline pb-0">
+                <h2>
+                    Меню                </h2>
+            </li>
+            <!--
+                            <li class = "navAdaptive__item">
+                    <a href = "/" class = "navAdaptive__item--title nav-go" role = "button">
+                        Главная
+                    </a>
+                </li>
+                -->
+                                                    <li class="navAdaptive__item">
+                        <a href="about.html" class="navAdaptive__item--title nav-go" role="button">
+                            Сервер                        </a>
+                    </li>
+                                                <li class="navAdaptive__item"> <!-- TODO: bug fix https://forum.gta5rp.com/ and remove nav-go -->
+                    <a href="index.html@act=away_forum.html"
+                       class="navAdaptive__item--title nav-go"
+                       role="button">
+                        Форум                    </a>
+                </li>
+                                <li class="navAdaptive__item">
+                                                                        <a href="shop.html" class="navAdaptive__item--title nav-go" role="button">
+                                Купить GTA 5                            </a>
+                                                            </li>
+                                                    <li class="navAdaptive__item">
+                        <a href="https://gta5rp.com/login" class="navAdaptive__item--title nav-go" role="button">
+                            Авторизация                        </a>
+                    </li>
+                        </ul>
+        <button type="button" class="navAdaptive__close" id="closeAdaptive"></button>
+    </nav>
+</div>
+    </span>
+    <main id="page_content_body">
+            <div class="with-video pageHeader__wrapper">
+        <div class="pageHeader__video--wrapper">
+            <div class="pageHeader__video">
+                <div class="pageHeader__video--bg"
+                     style="background: url('images/screens/headerVideo/joinus.png') no-repeat top center;">
+                    <div class="g-btn-video__wrapper">
+                        <a href="https://www.youtube.com/watch?v=qySoJyrJH4A" target="_blank">
+                            <div class="g-btn-video">
+                                <div class="g-btn-video__press"></div>
+                                <div class="g-btn-video__impulse"></div>
+                                <div class="g-btn-video__impulse__lone"></div>
+                                <div class="g-btn-video__impulse__ltwo"></div>
+                                <div class="g-btn-video__impulse__lthree"></div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="play__wrapper">
+        <div class="container" style="max-width: 1086px !important;">
+            <div class="row">
+                <div class="col-12 mt-5 d-flex flex-column align-items-center justify-content-center mt-5">
+                    <img src="images/icons/scroll-down.png"/>
+                    <img src="images/screens/play/headline.png" class="wow fadeInDown" style="max-width: 100%;"/>
+                </div>
+                <div class="wow slideInUp play__step--wrap play__step--one col-12 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                    <div class="play__step">
+                        <div class="play__step--pic">
+                            <img src="images/screens/play/step-one.png"/>
+                        </div>
+                        <div class="play__step--content">
+                            <img src="images/icons/gtav-color.png"/>
+                        </div>
+                    </div>
+                    <div class="play__content" style="margin-top: 38px;">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-row flex-wrap justify-content-start align-items-center">
+                                <div class="playnow__card--step play__step--first">
+                                    1
+                                </div>
+                                <p class="ml-3 text-white-bold mt-0">
+                                    Шаг                                </p>
+                            </div>
+                            <div class="col-12 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                <p class="text-white-bold mt-4">
+                                    Купить и установить лицензионную GTA 5<br />
+                                    Если игра куплена, то следующий шаг                                </p>
+                                                                    <div class="mt-4" style="flex-direction: row; display: flex; gap: 20px; flex-wrap: wrap;">
+                                        <a href="https://store.steampowered.com/app/271590/Grand_Theft_Auto_V/"
+                                           target="_blank" rel="nofollow" role="button" class="g-btn g-btn-default"
+                                           onclick="statEvents.send('Как начать играть', '1 Шаг - Купить в Steam', 'link_outside');">
+
+                                            <p class="p-0 m-0 ml-2">
+                                                Купить в Steam                                            </p>
+                                        </a>
+                                        <a href="https://store.epicgames.com/ru/p/grand-theft-auto-v" target="_blank"
+                                           rel="nofollow" role="button" class="g-btn g-btn-default"
+                                           onclick="statEvents.send('Как начать играть', '1 Шаг - Купить в Steam', 'link_outside');">
+
+                                            <p class="p-0 m-0 ml-2">
+                                                Купить в Epic                                            </p>
+                                        </a>
+                                        <a href="https://store.rockstargames.com/ru/game/buy-gta-v" target="_blank"
+                                           rel="nofollow" role="button" class="g-btn g-btn-default"
+                                           onclick="statEvents.send('Как начать играть', '1 Шаг - Купить в Steam', 'link_outside');">
+
+                                            <p class="p-0 m-0 ml-2">
+                                                Купить в Rockstar                                            </p>
+                                        </a>
+                                    </div>
+                                                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow slideInUp play__step--wrap play__step--two col-12 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                    <div class="play__content" style="margin-top: 38px;">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-row flex-wrap justify-content-start align-items-center">
+                                <div class="playnow__card--step play__step--second">
+                                    2
+                                </div>
+                                <p class="ml-3 text-white-bold mt-0">
+                                    Шаг                                </p>
+                            </div>
+                            <div class="col-12 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                <p class="text-white-bold mt-4">
+                                     Установить и запустить <br /> GTA5RP Launcher (RAGE MP)                                </p>
+                                <a href="download.html" target="_blank" role="button" class="g-btn g-btn-default mt-4"
+                                   onclick="statEvents.send('Как начать играть', '2 Шаг - Скачать launcher', 'submit');">
+                                    <img src="images/icons/rage-small.png"/>
+                                    <p class="p-0 m-0 ml-2">
+                                        Скачать файл                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="play__step">
+                        <div class="play__step--pic">
+                            <img src="images/screens/play/step-two.png"/>
+                        </div>
+                        <div class="play__step--content" style="top: -10px;">
+                            <img src="images/icons/rage-medium.png" style="width: 135px;"/>
+                        </div>
+                    </div>
+                </div>
+                <div class="wow slideInUp play__step--wrap play__step--three col-12 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                    <div class="play__step">
+                        <div class="play__step--pic">
+                            <img src="images/screens/play/step-three.png"/>
+                        </div>
+                        <div class="play__step--content">
+                            <img src="images/icons/card-middle.png"/>
+                        </div>
+                    </div>
+                    <div class="play__content" style="margin-top: 38px;">
+                        <div class="row">
+                            <div class="col-12 d-flex flex-row flex-wrap justify-content-start align-items-center">
+                                <div class="playnow__card--step play__step--thirty">
+                                    3
+                                </div>
+                                <p class="ml-3 text-white-bold mt-0">
+                                    Шаг                                </p>
+                            </div>
+                            <div class="mt-4 col-12 d-flex flex-row flex-wrap align-items-center justify-content-between">
+                                <p class="text-white-bold mt-4">
+                                    1) Запустить лаунчер<br />
+                                    2) Выбрать сервер и начать играть<br />                                </p>
+                                <a href="start.html" role="button" class="g-btn g-btn-default mt-4 link_lock"
+                                   onclick="event.preventDefault()" data-clipboard-text="downtown.gta5rp.com:22005">
+                                    <img src="images/icons/copy-small.png"/>
+                                    <p class="p-0 m-0 ml-2">
+                                        Скопировать                                    </p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 d-flex flex-wrap flex-row justify-content-center justify-content-sm-around">
+                                                                                                        <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/downtown.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/downtown-small.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Downtown</h2>
+                                            <p class="m-0">
+                                                <output>1700</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1700">
+                                            <div class="server__server--fill"
+                                                 style="width: 100%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'downtown', 'submit');"
+                                               data-clipboard-text="downtown.gta5rp.com:22005">
+                                                <p class="m-0">downtown.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/strawberry.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/strawberry-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Strawberry</h2>
+                                            <p class="m-0">
+                                                <output>1530</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1530">
+                                            <div class="server__server--fill"
+                                                 style="width: 90%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'strawberry', 'submit');"
+                                               data-clipboard-text="strawberry.gta5rp.com:22005">
+                                                <p class="m-0">strawberry.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/vinewood.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/vinewood-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Vinewood</h2>
+                                            <p class="m-0">
+                                                <output>1690</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1690">
+                                            <div class="server__server--fill"
+                                                 style="width: 99.411764705882%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'vinewood', 'submit');"
+                                               data-clipboard-text="vinewood.gta5rp.com:22005">
+                                                <p class="m-0">vinewood.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/blackberry-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/blackberry-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Blackberry</h2>
+                                            <p class="m-0">
+                                                <output>1561</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1561">
+                                            <div class="server__server--fill"
+                                                 style="width: 91.823529411765%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'blackberry', 'submit');"
+                                               data-clipboard-text="blackberry.gta5rp.com:22005">
+                                                <p class="m-0">blackberry.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='position: relative; background: url("images/screens/playnow/insquad.png") no-repeat top center; '>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/screens/playnow/mj.png"
+                                             style="position: absolute; top: 40px; left: 0;"
+                                             alt="gra5rp"
+                                        />
+                                        <div class="ml-3" style="padding-left: 60px;">
+                                            <h2>Insquad</h2>
+                                            <p class="m-0">
+                                                <output>1510</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                            <img src="images/screens/playnow/insquad-logo.png"
+                                                 style="position: absolute; top: 40px; right: 10px;"
+                                                 alt="gra5rp"
+                                            />
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1510">
+                                            <div class="server__server--fill"
+                                                 style="width: 88.823529411765%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'insquad', 'submit');"
+                                               data-clipboard-text="insquad.gta5rp.com:22005">
+                                                <p class="m-0">insquad.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/sunrise.jpg") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/sunrise-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Sunrise</h2>
+                                            <p class="m-0">
+                                                <output>1677</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1677">
+                                            <div class="server__server--fill"
+                                                 style="width: 98.647058823529%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'sunrise', 'submit');"
+                                               data-clipboard-text="sunrise.gta5rp.com:22005">
+                                                <p class="m-0">sunrise.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/rainbow-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/rainbow-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Rainbow</h2>
+                                            <p class="m-0">
+                                                <output>1559</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1559">
+                                            <div class="server__server--fill"
+                                                 style="width: 91.705882352941%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'rainbow', 'submit');"
+                                               data-clipboard-text="rainbow.gta5rp.com:22005">
+                                                <p class="m-0">rainbow.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/richman-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/richman-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Richman</h2>
+                                            <p class="m-0">
+                                                <output>1694</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1694">
+                                            <div class="server__server--fill"
+                                                 style="width: 99.647058823529%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'richman', 'submit');"
+                                               data-clipboard-text="richman.gta5rp.com:22005">
+                                                <p class="m-0">richman.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/eclipse-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/eclipse-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Eclipse</h2>
+                                            <p class="m-0">
+                                                <output>1700</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1700">
+                                            <div class="server__server--fill"
+                                                 style="width: 100%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'eclipse', 'submit');"
+                                               data-clipboard-text="eclipse.gta5rp.com:22005">
+                                                <p class="m-0">eclipse.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/lamesa-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/lamesa-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>La Mesa</h2>
+                                            <p class="m-0">
+                                                <output>1536</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1536">
+                                            <div class="server__server--fill"
+                                                 style="width: 90.352941176471%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'lamesa', 'submit');"
+                                               data-clipboard-text="lamesa.gta5rp.com:22005">
+                                                <p class="m-0">lamesa.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/burton-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/burton-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Burton</h2>
+                                            <p class="m-0">
+                                                <output>1528</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1528">
+                                            <div class="server__server--fill"
+                                                 style="width: 89.882352941176%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'burton', 'submit');"
+                                               data-clipboard-text="burton.gta5rp.com:22005">
+                                                <p class="m-0">burton.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/rockford-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/rockford-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Rockford</h2>
+                                            <p class="m-0">
+                                                <output>1700</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1700">
+                                            <div class="server__server--fill"
+                                                 style="width: 100%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'rockford', 'submit');"
+                                               data-clipboard-text="rockford.gta5rp.com:22005">
+                                                <p class="m-0">rockford.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                                                                                            <section
+                                        class="wow fadeInLeft servers__wrapper servers__server mt-5 d-flex flex-column align-items-start justify-content-center"
+                                        style='background: url("images/screens/playnow/alta-bg.png") no-repeat top center;'>
+                                    <header class="d-flex flex-nowrap flex-row flex-wrap align-items-center">
+                                        <img src="images/icons/alta-icon.png" alt="gra5rp">
+                                        <div class="ml-3">
+                                            <h2>Alta</h2>
+                                            <p class="m-0">
+                                                <output>1700</output>
+                                                /
+                                                <output>1700</output>
+                                            </p>
+                                        </div>
+                                    </header>
+                                    <div class="servers__server--content" style="margin-top: 20px;">
+                                        <div class="servers__server--online" data-max="1700"
+                                             data-current="1700">
+                                            <div class="server__server--fill"
+                                                 style="width: 100%;"></div>
+                                        </div>
+                                        <div style="width: 100%; margin-top: 20px;">
+                                            <a href="start.html" role="button" class="g-btn g-btn-small g-btn-server"
+                                               onclick="event.preventDefault(); statEvents.send('Скопировать IP', 'alta', 'submit');"
+                                               data-clipboard-text="alta.gta5rp.com:22005">
+                                                <p class="m-0">alta.gta5rp.com:22005</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </section>
+                                                                                        </div>
+            </div>
+        </div>
+    </div>
+    </main>
+    <div class="content-wrapper footer__wrapper d-flex flex-column justify-content-end">
+    <div class="footer__container container">
+        <div class="row footer__container d-flex flex-row flex-wrap align-items-start">
+            <div class="footer__container col-lg-3 col-md-4 d-flex flex-column justify-content-between align-items-center">
+                <img src="images/logo.png" alt="gta5rp logo"/>
+                                <img src="images/screens/footer/characters.png" alt="gta5rp"/>
+            </div>
+            <div class="col-lg-4 col-md-4">
+                <nav class="footerNav navMain d-flex align-items-center justify-content-center">
+                    <ul class="navMain__links mb-0">
+                        <!--
+                                                    <li>
+                                <a href="/" class="nav-go">
+                                    Главная
+                                </a>
+                            </li>
+                        -->
+                            <li>
+                                <a href="javascript:void()"
+                                   class="nav-go">
+                                    Играть                                </a>
+                            </li>
+                            <li>
+                                <a href="about.html"
+                                   class="nav-go">
+                                    Сервер                                </a>
+                            </li>
+                                                        <li>
+                                <a href="index.html@act=away_forum.html" target="_blank"
+                                   onclick="statEvents.send('Переход на форум', 'click', 'cur_loc');">
+                                    Форум                                </a>
+                            </li>
+                                                        <li>
+                                <a href="news.html" class="nav-go">
+                                    Новости                                </a>
+                            </li>
+                                                                                                                                                                </ul>
+                </nav>
+            </div>
+            <div class="d-flex flex-column col-lg-5 col-md-4">
+                <p class="mt-4 footer__p d-flex align-items-center justify-content-center">
+                    GTA 5 RP — новый уровень онлайн-игр. Играй <br />
+                    бандитом или полицейским, чиновником или медиком,
+                    мафией или сотрудником ФБР. <br /> <br />
+                    Прочувствуй атмосферу удивительного мира ролевой
+                    игры с реалистичным миром на ГТА РП!                </p>
+                <img src="images/screens/footer/veh.png" class="d-none d-lg-flex align-self-end" alt="gta5rp"/>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="footer__agreements d-flex align-items-center justify-content-center">
+    <div class="container">
+        <div class="footer_row">
+            <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-lg-start">
+                <a href="https://gta5rp.com/doc/oferta.pdf" class="footer__agreement">
+                    Пользовательское соглашение                </a>
+            </div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-lg-start">
+                <a href="https://gta5rp.com/doc/privacy.pdf" class="footer__agreement">
+                    Политика защиты персональной информации                </a>
+            </div>
+            <div class="col-12 col-sm-4 d-flex justify-content-center justify-content-lg-start">
+                <span class="footer__agreement">
+                    GTA5RP.COM &copy Life Now Limited
+                </span>
+            </div>
+        </div>
+    </div>
+</div>
+    <div id="scrollTop-app">
+    <transition name="scrollFade">
+        <div class="scrollTop__wrapper"
+             v-if="is_visible"
+             @click.prevent="toTop()">
+            <div class="scrollTop__main">
+                <div class="scrollTop__arrow"></div>
+                <p>Наверх</p>
+            </div>
+        </div>
+    </transition>
+</div>
+</div>
+</body>
+</html>
+    <!-- Page rendered at 0.01491904258728 sec -->
